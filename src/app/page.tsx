@@ -1,9 +1,11 @@
 import Herosection from "@/sections/Herosection";
+import Services from "@/sections/Services";
 
 export default function Home() {
   return (
-    <div>
+    <div className="z-0">
       <Herosection />
+      <Services />
     </div>
   );
 }
