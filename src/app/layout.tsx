@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Open_Sans, Anton } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const manrope = Manrope({
+const opensans = Open_Sans({
   subsets: ["latin"],
+});
+
+export const anton = Anton({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} antialiased`}>
+      <body className={`${opensans.className} font-display antialiased`}>
         <Header />
         {children}
       </body>
