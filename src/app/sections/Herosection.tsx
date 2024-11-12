@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import FeatherIcon from "feather-icons-react";
 import React from "react";
-import { anton } from "../layout";
+import { anton } from "../fonts";
 
 const Herosection = () => {
   return (

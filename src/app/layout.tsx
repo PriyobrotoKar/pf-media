@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import { Open_Sans, Anton } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-
-const opensans = Open_Sans({
-  subsets: ["latin"],
-});
-
-export const anton = Anton({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import { opensans } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",

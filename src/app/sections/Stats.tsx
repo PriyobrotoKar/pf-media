@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import FeatherIcon from "feather-icons-react";
 import React from "react";
-import { anton } from "../layout";
 import { cn } from "@/lib/utils";
+import { anton } from "../fonts";
 
 const stats = [
   {
