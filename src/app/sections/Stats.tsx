@@ -21,7 +21,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="flex justify-center items-center gap-32">
+    <section className="flex justify-center items-center gap-32 px-28">
       <div className="flex max-w-sm flex-wrap justify-center gap-y-20">
         {stats.map((stat, index) => (
           <div key={index} className="w-1/2">
@@ -46,8 +46,8 @@ const Stats = () => {
         ))}
       </div>
       <div className=" space-y-10">
-        <h2 className="text-xl">
-          Let the <span className="text-accent italic">numbers</span> speak.
+        <h2 className={`text-4xl ${anton.className}`}>
+          We Let the <span className="text-accent">Numbers</span> Speak.
         </h2>
         <p className="max-w-xl">
           Makes your site seamless across all devicesMakes your site seamless
