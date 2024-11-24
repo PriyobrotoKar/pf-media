@@ -24,7 +24,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header className="flex z-0 relative justify-between bg-background items-center px-8 py-5">
+    <header className="flex z-0 fixed top-0 w-full z-50 justify-between bg-background items-center px-8 py-5">
       <div className="text-[1.125rem] lg:text-lg text-primary font-medium">
         PF Media.
       </div>

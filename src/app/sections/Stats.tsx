@@ -46,10 +46,10 @@ const Stats = () => {
         ))}
       </div>
       <div className=" space-y-10">
-        <h2 className={`text-4xl ${anton.className}`}>
+        <h2 className={`text-4xl max-w-screen-sm ${anton.className}`}>
           We Let the <span className="text-accent">Numbers</span> Speak.
         </h2>
-        <p className="max-w-xl">
+        <p className="max-w-md">
           Makes your site seamless across all devicesMakes your site seamless
           across all devicesMakes your site seamless across all devicesMakes
           your site seamless across all devicesMakes your site seamless across

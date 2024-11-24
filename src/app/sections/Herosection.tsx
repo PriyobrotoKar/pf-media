@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Herosection = () => {
   return (
-    <section className="text-center min-h-[90svh] pb-40 bg-background md:text-left max-w-5xl lg:max-w-screen-xl mx-auto flex justify-center items-center  gap-14 md:gap-24 px-14 pt-8 lg:pt-16 xl:pt-32">
+    <section className="sticky top-0 -z-10 text-center min-h-[90svh] pb-40 bg-background md:text-left max-w-5xl lg:max-w-screen-xl mx-auto flex justify-center items-center  gap-14 md:gap-24 px-14 pt-8 lg:pt-16 xl:pt-32">
       <div className="max-w-xs md:max-w-none lg:py-7 flex-1">
         <h1
           className={`text-lg md:text-3xl lg:text-4xl font-medium mb-5 md:mb-4 lg:mb-8 mx-auto ${anton.className}`}

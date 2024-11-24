@@ -41,8 +41,8 @@ const company = [
 
 export default function Footer() {
   return (
-    <footer className=" max-w-[1440px] mx-auto pt-60 pb-20    bg-primary">
-      <main className="flex justify-between bg-background  rounded-3xl p-20 mx-12 ">
+    <footer className=" pt-48 pb-16 px-8  bg-primary">
+      <main className="flex max-w-screen-2xl mx-auto justify-between bg-background  rounded-3xl p-20 ">
         <div className="flex flex-col justify-between">
           <div>
             <h1 className="text-xl font-bold text-primary">PF Media.</h1>
@@ -52,7 +52,7 @@ export default function Footer() {
             Explore <FeatherIcon icon="arrow-up-right" />
           </Button>
         </div>
-        <div className="flex gap-20">
+        <div className="flex gap-40">
           <div className="space-y-5">
             <h2 className="text-xl font-bold">Social</h2>
             <div className="space-y-3">
