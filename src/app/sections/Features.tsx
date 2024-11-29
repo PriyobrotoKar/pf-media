@@ -1,60 +1,38 @@
 import React from "react";
 import { anton } from "../fonts";
+import FeatureInfinite from "@/components/FeatureInfinite";
 
 const features = [
   {
-    title: "'Effortless' flow across all screens",
-    description: "Makes your site seamless across all devices",
+    title: "'Design' that ranks and converts",
+    description: "Blending aesthetics with SEO",
+    image: "feature1.png",
   },
   {
-    title: "'Effortless' flow across all screens",
-    description: "Makes your site seamless across all devices",
+    title: "'Refining' for Peak Performance",
+    description: "Testing what works best to convert",
+    image: "feature2.png",
   },
   {
-    title: "'Effortless' flow across all screens",
-    description: "Makes your site seamless across all devices",
+    title: "'Insights' that dive results",
+    description: "Tracking performance to boost conversions",
+    image: "feature3.png",
   },
   {
-    title: "'Effortless' flow across all screens",
-    description: "Makes your site seamless across all devices",
+    title: "'Content' that captivates",
+    description: "Impactful stories tailored for your audience",
+    image: "feature4.png",
   },
   {
-    title: "'Effortless' flow across all screens",
-    description: "Makes your site seamless across all devices",
-  },
-  {
-    title: "'Effortless' flow across all screens",
-    description: "Makes your site seamless across all devices",
-  },
-  {
-    title: "'Effortless' flow across all screens",
-    description: "Makes your site seamless across all devices",
+    title: "'Understanding' audience deeply",
+    description: "Tracking behavior to tailor strategies",
+    image: "feature5.png",
   },
 ];
 
-const Highlight = ({ text }: { text: string }) => {
-  const regex = /'(?<temp1>.*?)'/g;
-  const parts = text.split(regex);
-
-  return (
-    <>
-      {parts.map((part, index) => {
-        if (index % 2 === 1) {
-          return (
-            <span key={index} className={anton.className}>
-              {part}
-            </span>
-          );
-        }
-        return part;
-      })}
-    </>
-  );
-};
-
 const Features = () => {
   return (
-    <section className="space-y-40">
+    <section className="space-y-40 overflow-x-hidden will-change-auto">
       <div className="text-center space-y-8">
         <p className="text-2xl">Creative Mastery</p>
         <h2 className={`${anton.className} text-4xl max-w-2xl mx-auto`}>
@@ -62,19 +40,7 @@ const Features = () => {
         </h2>
       </div>
 
-      <div className="flex gap-8 overflow-x-hidden">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="flex flex-col min-w-0 w-[18.5rem] shrink-0 bg-background text-primary items-center gap-56 py-10 px-8 rounded-[3.125rem]"
-          >
-            <h3 className="text-2xl italic">
-              <Highlight text={feature.title} />
-            </h3>
-            <p>{feature.description}</p>
-          </div>
-        ))}
-      </div>
+      <FeatureInfinite features={features} />
     </section>
   );
 };

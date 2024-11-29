@@ -41,7 +41,7 @@ const company = [
 
 export default function Footer() {
   return (
-    <footer className=" pt-48 pb-16 px-8  bg-primary">
+    <footer className="max-w-screen-2xl mx-auto pt-48 pb-16 px-8  bg-primary">
       <main className="flex max-w-screen-2xl mx-auto justify-between bg-background  rounded-3xl p-20 ">
         <div className="flex flex-col justify-between">
           <div>

@@ -46,7 +46,7 @@ const Stats = () => {
         ))}
       </div>
       <div className=" space-y-10">
-        <h2 className={`text-4xl max-w-screen-sm ${anton.className}`}>
+        <h2 className={`text-4xl max-w-lg ${anton.className}`}>
           We Let the <span className="text-accent">Numbers</span> Speak.
         </h2>
         <p className="max-w-md">
